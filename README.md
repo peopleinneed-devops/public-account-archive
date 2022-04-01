@@ -1,8 +1,15 @@
 # About
-Archives (exports) Exchange online mailbox to PST file automatically. No GUI clicking or expensive software needed.
+
+**Archives (exports) Exchange online mailbox to PST file automatically. No GUI clicking or expensive software needed.**
+
 Tested on hundreds of mailboxes of various size, designed to run multiple exports simultaneously. 
 After the successful process the mailbox will exist only in form of PST file.
 Common usecase "employee left, now we archive the mailbox for compliance reasons and free the Office365 license".
+
+![Schema](assets/Account-Archive-simple.png?raw=true "Schema")
+
+## Screenshot
+![screenshot](assets/screenshot.PNG?raw=true "screenshot")
 
 
 # Prerequisities
@@ -55,9 +62,3 @@ $q.limits.[jobPhase]::ExportPST      = 20
 open the `pwsh.exe` in the code directory and type there `.\Account-Archive.ps1` followed by Enter. 
 
 
-## subchapter
-`code`
-*italic*
-```
-code block
-```
