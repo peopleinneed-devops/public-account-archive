@@ -58,6 +58,9 @@ $q.limits.[jobPhase]::MoveOnprem     = 20
 $q.limits.[jobPhase]::ExportPST      = 20
 ```
 
+[Schema detail of archival process](assets/Account-Archive.png)
+
+
 # Running
 open the `pwsh.exe` in the code directory and type there `.\Account-Archive.ps1` followed by Enter. 
 
