@@ -23,6 +23,7 @@ $global:onpremExchangeMailboxDB  = "MBD-OFFBOARDING" # existing mailbox database
 $global:onpremExchangeHostname   = 'yourmailserver.yourdomain.com' # fqdn of your onprem exchange
 $global:onpremExchangeLogin      = "yourServiceAccount@yourdomain.com" # should have appropriate roles/rights. i.e. be in "Recipient management" 
 $global:onpremExchangeCredFile   = "$onpremExchangeLogin-$($env:username).cred"
+$global:onpremExchangeCreds      = new-object -typename System.Management.Automation.PSCredential -argumentlist $onpremExchangeLogin,$(cat $onpremExchangeCredFile | convertto-securestring) -ErrorAction stop
 $global:onpremExchangeRemoteRA   = 'yourorgname.mail.onmicrosoft.com' # remote routing address to online exchange. should be like [yourOrgname].mail.onmicrosoft.com
 
 # create certificate via
