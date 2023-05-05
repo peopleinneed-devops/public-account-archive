@@ -17,6 +17,9 @@ Common usecase "employee left, now we archive the mailbox for compliance reasons
 - on-premises (inhouse) Exchange server, cooperating with online Exchange in so called hybrid mode
 - a place to store mailbox exports (PST files)
 
+# Download
+[ZIP](https://github.com/peopleinneed-devops/public-account-archive/archive/refs/heads/main.zip) or open [github repository](https://github.com/peopleinneed-devops/public-account-archive/) 
+
 # Installation
 - download the code and put its structure into some directory, preferably on server/workstation that can see Onpremise and also Online exchange and has access to some backup folder, where you will archive mailbox exports (PST files). 
 - install Powershell Core, the next (and current) generation of Powershell. https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows
